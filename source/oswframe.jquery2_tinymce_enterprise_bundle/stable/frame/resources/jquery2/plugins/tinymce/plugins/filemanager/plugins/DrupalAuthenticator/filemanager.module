@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Implementation of hook_wysiwyg_plugin().
+ */
+function filemanager_wysiwyg_plugin($editor, $version) {
+	switch ($editor) {
+		case 'tinymce':
+			return array(
+				'filemanager' => array(
+					'path' => drupal_get_path('module', 'filemanager') .'/../..',
+					'filename' => 'editor_plugin.js',
+					'buttons' => array('insertfile' => t('MCFileManager')),
+					'extensions' => array('filemanager' => t('filemanager')),
+					'url' => 'http://wiki.moxiecode.com/index.php/MCFileManager:Index',
+					'load' => TRUE
+				)
+			);
+			
+		break;
+	}
+}
+
+?>

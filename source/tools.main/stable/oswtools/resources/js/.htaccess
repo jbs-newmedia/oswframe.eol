@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^jquery.js$ jquery.min.js [L]

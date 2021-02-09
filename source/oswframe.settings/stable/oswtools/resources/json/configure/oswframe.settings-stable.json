@@ -1,0 +1,35 @@
+{
+	"configure": 
+	{
+		"middle": 
+		{
+			"class_osw_settings_enabled": true,
+			"settings_system": "unix",
+			"settings_port": 80,
+			"settings_ssl_port": 443,
+			"settings_ssl": true,
+			"settings_ssl_modules": "",
+			"settings_ssl_global": false,
+			"settings_mobile": false,
+			"settings_modules_runs": 5,
+			"settings_slowruntime": 0.5,
+			"settings_ramlimit": 8388608,
+			"settings_errorlogger": "_errorlogger",
+			"settings_imageoptimizer": "_imageoptimizer",
+			"settings_scriptoptimizer": "_scriptoptimizer",
+			"settings_styleoptimizer": "_styleoptimizer",
+			"settings_chmod_file": "0644",
+			"settings_chmod_dir": "0755",
+			"settings_protection_salt": "jklhsdfbk453sad@asd34D34",
+			"settings_report_new_versions": false,
+			"settings_install_new_versions": false,
+			"settings_updatetool_htaccess_login": "",
+			"settings_check_new_versions_time": 86400,
+			"settings_check_classes": false,
+			"settings_frame_class_prefixes": "osw",
+			"settings_frame_class_prefixes_custom": "",
+			"project_protection_user": "",
+			"project_protection_password": ""
+		}
+	}
+}

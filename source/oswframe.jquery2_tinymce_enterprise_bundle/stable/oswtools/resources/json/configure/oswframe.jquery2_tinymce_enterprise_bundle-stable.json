@@ -1,0 +1,8 @@
+{
+  "configure": {
+    "middle": {
+      "tinymce_filemanager_enabled": true,
+      "tinymce_imagemanager_enabled": true
+    }
+  }
+}

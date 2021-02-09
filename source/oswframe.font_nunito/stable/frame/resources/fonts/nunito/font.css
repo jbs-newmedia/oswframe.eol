@@ -1,0 +1,13 @@
+/* nunito-regular - latin */
+@font-face {
+	font-family: 'nunito';
+	font-style: normal;
+	font-weight: 400;
+	src: url('__DIR__/frame/resources/fonts/nunito/nunito-v9-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local('Nunito'), local('Nunito Regular'), local('Nunito-Regular'),
+		url('__DIR__/frame/resources/fonts/nunito/nunito-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('__DIR__/frame/resources/fonts/nunito/nunito-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('__DIR__/frame/resources/fonts/nunito/nunito-v9-latin-regular.woff'), /* Modern Browsers */
+		url('__DIR__/frame/resources/fonts/nunito/nunito-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('__DIR__/frame/resources/fonts/nunito/nunito-v9-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
+};

@@ -1,0 +1,8 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_cache_enabled": true,
+      "cache_path": ".caches/"
+    }
+  }
+}

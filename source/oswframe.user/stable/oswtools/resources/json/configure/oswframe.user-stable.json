@@ -1,0 +1,14 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_user_enabled": true,
+      "user_cookiename": "oswuser",
+      "user_cookiestrlen": 32,
+      "user_cookiedefaultlevel": 2,
+      "user_cookielifetime": 30,
+      "user_defaultuserid": 0,
+      "user_defaultguestgroupid": 0,
+      "user_defaultusergroupid": 1
+    }
+  }
+}

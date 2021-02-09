@@ -1,0 +1,9 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_tinymce_enabled": true,
+      "tinymce_filemanager_enabled": false,
+      "tinymce_imagemanager_enabled": false
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "oswframe.ddm3_tinymce",
+    "author": "Juergen Schwind",
+    "copyright": "Juergen Schwind",
+    "link": "http:\/\/oswframe.com",
+    "license": "GNU General Public License",
+    "package": "oswframe.ddm3_tinymce",
+    "version": "",
+    "release": "stable",
+    "group": "core",
+    "unique": false,
+    "serverlist": "oswframe"
+  },
+  "required": [
+    {
+      "serverlist": "oswframe",
+      "package": "oswframe.ddm3",
+      "release": "stable"
+    },
+    {
+      "serverlist": "oswframe",
+      "package": "oswframe.jquery_tinymce",
+      "release": "stable"
+    }
+  ]
+}

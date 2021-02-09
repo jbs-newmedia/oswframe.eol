@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "oswframe.bootstrap3_datatables_responsive",
+    "author": "Juergen Schwind",
+    "copyright": "Juergen Schwind",
+    "link": "http:\/\/oswframe.com",
+    "license": "GNU General Public License",
+    "package": "oswframe.bootstrap3_datatables_responsive",
+    "version": "",
+    "release": "stable",
+    "group": "core",
+    "unique": false,
+    "serverlist": "oswframe"
+  },
+  "required": [
+    {
+      "serverlist": "oswframe",
+      "package": "oswframe.bootstrap3_datatables",
+      "release": "stable"
+    }
+  ]
+}

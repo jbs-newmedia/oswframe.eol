@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "oswframe.ddm3_idna",
+    "author": "Juergen Schwind",
+    "copyright": "Juergen Schwind",
+    "link": "http:\/\/oswframe.com",
+    "license": "GNU General Public License",
+    "package": "oswframe.ddm3_idna",
+    "version": "",
+    "release": "stable",
+    "group": "core",
+    "unique": false,
+    "serverlist": "oswframe"
+  },
+  "required": [
+    {
+      "serverlist": "oswframe",
+      "package": "oswframe.ddm3",
+      "release": "stable"
+    },
+    {
+      "serverlist": "oswframe",
+      "package": "oswframe.idna",
+      "release": "stable"
+    }
+  ]
+}

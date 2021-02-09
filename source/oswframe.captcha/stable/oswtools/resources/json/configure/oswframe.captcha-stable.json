@@ -1,0 +1,9 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_captcha_enabled": true,
+      "captcha_chars": "123456789ABCDEF",
+      "captcha_length": 6
+    }
+  }
+}

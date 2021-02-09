@@ -1,0 +1,8 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_opengraph_enabled": true,
+      "opengraph_html_append": "prefix=\"og: http://ogp.me/ns#\""
+    }
+  }
+}

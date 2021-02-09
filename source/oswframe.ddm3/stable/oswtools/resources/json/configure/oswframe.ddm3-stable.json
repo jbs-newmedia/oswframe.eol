@@ -1,0 +1,8 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_ddm3_enabled": true,
+      "class_osw_ddm3_log_enabled": true
+    }
+  }
+}

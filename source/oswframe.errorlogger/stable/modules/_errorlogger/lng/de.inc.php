@@ -1,0 +1,5 @@
+<?php
+
+$ar_lang=['title'=>'%s - Fehlerseite', 'description'=>'osW-Frame Fehlerseite', 'error_msg'=>'Fehler %s', 'startpage'=>'Hier gelangen Sie auf die Startseite', 'error_msg_401'=>'Unauthorized', 'error_msg_402'=>'Payment Required', 'error_msg_403'=>'Forbidden', 'error_msg_404'=>'Not Found', 'error_msg_405'=>'Method Not Allowed', 'error_msg_406'=>'Not Acceptable', 'error_msg_407'=>'Proxy Authentication Required', 'error_msg_408'=>'Request Timeout', 'error_msg_409'=>'Conflict', 'error_msg_410'=>'Gone', 'error_msg_411'=>'Length Required', 'error_msg_412'=>'Precondition Failed', 'error_msg_413'=>'Request Entity Too Large', 'error_msg_414'=>'Request-URI Too Long', 'error_msg_415'=>'Unsupported Media Type', 'error_msg_416'=>'Requested Range Not Satisfiable', 'error_msg_417'=>'Expectation Failed', 'error_msg_400'=>'Bad Request'];
+
+?>

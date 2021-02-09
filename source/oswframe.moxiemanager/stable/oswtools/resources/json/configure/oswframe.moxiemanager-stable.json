@@ -1,0 +1,8 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_moxiemanager_enabled": true,
+      "moxiemanager_license": ""
+    }
+  }
+}

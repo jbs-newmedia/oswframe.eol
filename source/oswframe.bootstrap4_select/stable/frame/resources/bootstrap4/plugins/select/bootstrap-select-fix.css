@@ -1,0 +1,12 @@
+.select-ellipsis-fix .dropdown,
+.select-ellipsis-fix .dropdown-toggle,
+.select-ellipsis-fix .dropdown-menu {
+	width: 100%;	
+}
+
+.select-ellipsis-fix span.text  {
+	width: 100%;	
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

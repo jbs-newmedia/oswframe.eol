@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "Blank",
+    "author": "Juergen Schwind",
+    "copyright": "Juergen Schwind",
+    "link": "http:\/\/oswframe.com",
+    "license": "GNU General Public License",
+    "package": "oswproject.blank",
+    "version": "",
+    "release": "stable",
+    "group": "example",
+    "unique": false,
+    "serverlist": "oswframe"
+  },
+  "required": [
+    {
+      "serverlist": "oswframe",
+      "package": "oswframe.core",
+      "release": "stable"
+    }
+  ]
+}

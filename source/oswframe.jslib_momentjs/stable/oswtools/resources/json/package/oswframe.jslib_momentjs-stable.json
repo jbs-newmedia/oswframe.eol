@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "oswframe.jslib_momentjs",
+    "author": "Juergen Schwind",
+    "copyright": "Juergen Schwind",
+    "link": "http:\/\/oswframe.com",
+    "license": "GNU General Public License",
+    "package": "oswframe.jslib_momentjs",
+    "version": "",
+    "release": "stable",
+    "group": "core",
+    "unique": false,
+    "serverlist": "oswframe"
+  },
+  "required": [
+    {
+      "serverlist": "oswframe",
+      "package": "oswframe.jslib",
+      "release": "stable"
+    }
+  ]
+}

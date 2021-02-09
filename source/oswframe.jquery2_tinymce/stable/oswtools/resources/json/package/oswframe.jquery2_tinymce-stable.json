@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "oswframe.jquery2_tinymce",
+    "author": "Juergen Schwind",
+    "copyright": "Juergen Schwind",
+    "link": "http:\/\/oswframe.com",
+    "license": "GNU General Public License",
+    "package": "oswframe.jquery2_tinymce",
+    "version": "",
+    "release": "stable",
+    "group": "core",
+    "unique": false,
+    "serverlist": "oswframe"
+  },
+  "required": [
+    {
+      "serverlist": "oswframe",
+      "package": "oswframe.jquery2",
+      "release": "stable"
+    }
+  ]
+}

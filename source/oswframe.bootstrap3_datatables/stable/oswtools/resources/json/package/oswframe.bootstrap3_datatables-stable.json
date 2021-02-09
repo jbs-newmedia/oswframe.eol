@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "oswframe.bootstrap3_datatables",
+    "author": "Juergen Schwind",
+    "copyright": "Juergen Schwind",
+    "link": "http:\/\/oswframe.com",
+    "license": "GNU General Public License",
+    "package": "oswframe.bootstrap3_datatables",
+    "version": "",
+    "release": "stable",
+    "group": "core",
+    "unique": false,
+    "serverlist": "oswframe"
+  },
+  "required": [
+    {
+      "serverlist": "oswframe",
+      "package": "oswframe.bootstrap3",
+      "release": "stable"
+    },
+    {
+      "serverlist": "oswframe",
+      "package": "oswframe.jquery2_datatables",
+      "release": "stable"
+    }
+  ]
+}

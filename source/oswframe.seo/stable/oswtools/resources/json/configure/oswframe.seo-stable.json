@@ -1,0 +1,9 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_seo_enabled": true,
+      "seo_extension": "",
+      "seo_direct": true
+    }
+  }
+}

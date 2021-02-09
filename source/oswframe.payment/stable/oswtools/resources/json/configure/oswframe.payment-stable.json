@@ -1,0 +1,12 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_payment_enabled": true
+    }
+  },
+  "htaccess": {
+    "topmiddle": [
+      "RewriteRule ^paywriter/([a-zA-Z0-9-_]+)$ ?module=paywriter&paymodule=$1&%{QUERY_STRING} [L]"
+    ]
+  }
+}

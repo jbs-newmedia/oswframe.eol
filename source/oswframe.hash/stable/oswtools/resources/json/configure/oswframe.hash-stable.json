@@ -1,0 +1,9 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_hash_enabled": true,
+      "hash_length": 32,
+      "hash_lifetime": 604800
+    }
+  }
+}

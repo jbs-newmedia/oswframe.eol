@@ -1,0 +1,5 @@
+@CHARSET "UTF-8";
+
+table.table_ddm_form tr.table_ddm_row td.table_ddm_col_form input[type="text"].table_ddm_col_form_date {
+    width: 110px;
+}

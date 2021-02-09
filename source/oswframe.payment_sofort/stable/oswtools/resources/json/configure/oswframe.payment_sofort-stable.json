@@ -1,0 +1,10 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_payment_sofort_enabled": true,
+      "payment_sofort_user_id": 0,
+      "payment_sofort_project_id": 0,
+      "payment_sofort_project_password": ""
+    }
+  }
+}

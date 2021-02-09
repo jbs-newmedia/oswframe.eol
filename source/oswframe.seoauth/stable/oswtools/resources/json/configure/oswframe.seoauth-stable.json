@@ -1,0 +1,17 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_seoauth_enabled": true,
+      "seoauth_google_enabled": true,
+      "seoauth_google_users": "",
+      "seoauth_bing_enabled": true,
+      "seoauth_bing_users": ""
+    }
+  },
+  "htaccess": {
+    "topmiddle": [
+      "RewriteRule ^google([0-9a-f]{16,16})\\.html$ ?module=_seoauth&se=google&auth=$1&%{QUERY_STRING}",
+      "RewriteRule ^BingSiteAuth\\.xml$ ?module=_seoauth&se=bing&%{QUERY_STRING}"
+    ]
+  }
+}

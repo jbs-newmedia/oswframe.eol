@@ -1,0 +1,8 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_lock_enabled": true,
+      "lock_path": ".locks/"
+    }
+  }
+}

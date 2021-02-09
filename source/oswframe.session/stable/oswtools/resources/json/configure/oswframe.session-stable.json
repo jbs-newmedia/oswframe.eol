@@ -1,0 +1,21 @@
+{
+	"configure": {
+		"middle": {
+			"class_osw_session_enabled": true,
+			"session_path": ".sessions/",
+			"session_name": "oswsid",
+			"session_lifetime": 1800,
+			"session_cookie_lifetime": 0,
+			"session_verifyip": "x.x",
+			"session_verifyua": true,
+			"session_secure": false,
+			"session_httponly": false,
+			"session_historycount": 3,
+			"session_gc_probability": true,
+			"session_gc_divisor": 10,
+			"session_use_only_cookies": false,
+			"session_disabled_modules": "_robots,_seoauth",
+			"session_disabled_modules_custom": ""
+		}
+	}
+}

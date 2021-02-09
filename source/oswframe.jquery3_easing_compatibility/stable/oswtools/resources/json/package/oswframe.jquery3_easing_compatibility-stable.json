@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "oswframe.jquery3_easing_compatibility",
+    "author": "Juergen Schwind",
+    "copyright": "Juergen Schwind",
+    "link": "http:\/\/oswframe.com",
+    "license": "GNU General Public License",
+    "package": "oswframe.jquery3_easing_compatibility",
+    "version": "",
+    "release": "stable",
+    "group": "core",
+    "unique": false,
+    "serverlist": "oswframe"
+  },
+  "required": [
+    {
+      "serverlist": "oswframe",
+      "package": "oswframe.jquery3",
+      "release": "stable"
+    }
+  ]
+}

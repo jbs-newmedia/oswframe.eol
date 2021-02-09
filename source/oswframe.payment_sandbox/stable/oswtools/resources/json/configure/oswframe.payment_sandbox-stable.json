@@ -1,0 +1,8 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_payment_sandbox_enabled": true,
+      "payment_sandbox_business": ""
+    }
+  }
+}

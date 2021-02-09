@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "oswframe.date",
+    "author": "Juergen Schwind",
+    "copyright": "Juergen Schwind",
+    "link": "http:\/\/oswframe.com",
+    "license": "GNU General Public License",
+    "package": "",
+    "version": "20200622.121611",
+    "release": "alpha",
+    "group": "core",
+    "unique": false,
+    "serverlist": "oswframe"
+  },
+  "required": []
+}

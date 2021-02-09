@@ -1,0 +1,8 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_payment_paypal_enabled": true,
+      "payment_paypal_business": ""
+    }
+  }
+}

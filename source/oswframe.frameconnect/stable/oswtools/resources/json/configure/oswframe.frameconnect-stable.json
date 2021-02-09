@@ -1,0 +1,10 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_frameconnect_enabled": true,
+      "frameconnect_url": "oswframe.com/",
+      "frameconnect_apikey": "",
+      "frameconnect_apisalt": ""
+    }
+  }
+}

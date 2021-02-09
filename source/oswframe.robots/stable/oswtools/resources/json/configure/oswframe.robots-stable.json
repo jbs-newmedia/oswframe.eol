@@ -1,0 +1,12 @@
+{
+  "configure": {
+    "middle": {
+      "class_osw_robots_enabled": true
+    }
+  },
+  "htaccess": {
+    "topmiddle": [
+      "RewriteRule ^robots.txt$ ?module=_robots&%{QUERY_STRING}"
+    ]
+  }
+}
