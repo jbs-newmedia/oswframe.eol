@@ -15,7 +15,7 @@
 ######################################################################################################################################################
 error_reporting(0);
 
-$server_data=['server_name'=>'$SERVER_NAME$', 'server_version'=>'6.01', 'server_url'=>'$SERVER_URL$', 'server_file'=>'$SERVER_FILE$', 'server_list_name'=>'$SERVER_LIST_NAME$', 'server_list'=>'$SERVER_LIST$', 'server_secure'=>'$SERVER_SECURE$', 'server_token'=>'$SERVER_TOKEN$', 'server_status'=>1];
+$server_data=['server_name'=>'$SERVER_NAME$', 'server_version'=>'6.02', 'server_url'=>'$SERVER_URL$', 'server_file'=>'$SERVER_FILE$', 'server_list_name'=>'$SERVER_LIST_NAME$', 'server_list'=>'$SERVER_LIST$', 'server_secure'=>'$SERVER_SECURE$', 'server_token'=>'$SERVER_TOKEN$', 'server_status'=>1];
 
 ######################################################################################################################################################
 # Funktionen
@@ -364,90 +364,25 @@ switch ($action) {
 		}
 
 		$send_package=unserialize($send_package);
+		if (isset($send_package['license_data'])) {
+			foreach ($send_package['license_data'] as $package=>$license) {
+				$package=explode('-', $package);
+				$_dir=$abs_path.'data/'.$package[0].'/'.$package[1].'/';
 
-		$_dir=$abs_path.'data/'.$send_package['packer_package'].'/'.$send_package['packer_release'].'/';
+				$file_packer_license=$_dir.'package.license';
+				_mkDir($_dir);
 
-		$file_packer_license=$_dir.'package.license';
-		_mkDir($_dir);
-
-		file_put_contents($file_packer_license, $send_package['packer_license']);
-		chmod($file_packer_checksum, 0664);
-		die('ok');
-		break;
-	# Aktualisiert das Package.Release (Lizenzen)
-	case 'server_clear_license' :
-		$error=false;
-		if (!isset($_POST['token'])) {
-			$token='';
-		} else {
-			$token=$_POST['token'];
-		}
-
-		$send_package=serialize(unserialize(base64_decode(substr(_mc_decrypt(base64_decode(substr(trim(file_get_contents($_FILES['data']['tmp_name'])), 4, -4)), $server_data['server_secure']), 4, -4))));
-		$_token=sha1($send_package.'#'.$server_data['server_token']);
-
-		if ($token!=$_token) {
-			die('error (token)');
-		}
-
-		$send_package=unserialize($send_package);
-
-		foreach ($send_package as $package) {
-			$file_packer_license=$abs_path.'data/'.$package['packer_package'].'/'.$package['packer_release'].'/package.license';
-			if (file_exists($file_packer_license)) {
-				unlink($file_packer_license);
+				if ($license!=[]) {
+					file_put_contents($file_packer_license, implode("\n", $license));
+					chmod($file_packer_checksum, 0664);
+				} else {
+					unlink($file_packer_license);
+				}
 			}
 		}
 		die('ok');
 		break;
-	# Gibt die Checksumme (Lizenzen) vom Server zurueck
-	/*
-	case 'server_checksum_license' :
-		$server_checksum='';
-		if (isset($_GET['packages'])) {
-			$_packages=array();
-			$_dir=$abs_path.'data/';
-			if ($handle_package=opendir($_dir)) {
-				while (false!==($package=readdir($handle_package))) {
-					if (((is_dir($_dir.$package))==true)&&($package!='.')&&($package!='..')) {
-						if ($handle_release=opendir($_dir.$package)) {
-							while (false!==($release=readdir($handle_release))) {
-								if (((is_dir($_dir.$package.'/'.$release))==true)&&($release!='.')&&($release!='..')) {
-									$_packages[$package.'-'.$release]=array('package'=>$package,'release'=>$release);
-								}
-							}
-							closedir($handle_release);
-						}
-					}
-				}
-				closedir($handle_package);
-			}
-
-			$_server_packages=($_GET['packages']);
-			$_server_packages=explode(',', $_server_packages);
-
-			foreach ($_server_packages as $_server_package) {
-				if (isset($_packages[$_server_package])) {
-					unset($_packages[$_server_package]);
-				}
-				$_server_package=explode('-', $_server_package);
-				$_dir=$abs_path.'data/'.$_server_package[0].'/'.$_server_package[1].'/package.license';
-				if (file_exists($_dir)) {
-					$server_checksum.=file_get_contents($_dir);
-				}
-			}
-		} else {
-			die('___404___');
-		}
-
-		foreach ($_packages as $package) {
-			$_dir=$abs_path.'data/'.$package['package'].'/'.$package['release'].'/';
-			_delDir($_dir);
-		}
-		die(sha1($server_checksum));
-		break;
-*/
-	# Gibt eine Liste mit allen Packages des Server als JSON zurueck
+	# Aktualisiert das Package.Release (Lizenzen)
 	case 'server_packages' :
 		$_packages=[];
 		$_dir=$abs_path.'data/';
