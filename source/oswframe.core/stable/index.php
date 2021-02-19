@@ -9,7 +9,10 @@
  *
  */
 
-if ((!defined(PHP_VERSION_ID))||(PHP_VERSION_ID<50600)) {
+/**
+ * PHP Version prüfen.
+ */
+if ((!defined('PHP_VERSION_ID'))||(PHP_VERSION_ID<50600)) {
 	die('This version of osWFrame requires PHP 5.6 or higher.<br/>You are currently running PHP '.phpversion().'.');
 }
 
