@@ -22,7 +22,7 @@ class osW_Form extends osW_Object {
 
 	/* METHODS CORE */
 	public function __construct() {
-		parent::__construct(2, 0);
+		parent::__construct(2, 1);
 	}
 
 	public function __destruct() {
@@ -53,6 +53,13 @@ class osW_Form extends osW_Object {
 	// FileField
 	function drawFileField($name, $value='', $options=[]) {
 		$options['input_type']='file';
+
+		return $this->createInputField($name, $value, $options);
+	}
+
+	// DateField
+	function drawDateField($name, $value='', $options=[]) {
+		$options['input_type']='date';
 
 		return $this->createInputField($name, $value, $options);
 	}
@@ -130,6 +137,8 @@ class osW_Form extends osW_Object {
 				case 'password' :
 					break;
 				case 'file' :
+					break;
+				case 'date' :
 					break;
 				case 'text' :
 				default :
