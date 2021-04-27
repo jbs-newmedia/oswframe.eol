@@ -77,8 +77,10 @@ $settimezone=h()->_setTimezone();
 set_error_handler([osW_ErrorHandler::getInstance(), 'handle']);
 
 # Remove the magic quotes if set from the GPC Globals
-if (get_magic_quotes_gpc()>0) {
-	osW_Settings::getInstance()->removeMagicQuotes();
+if ((!defined('PHP_VERSION_ID'))||(PHP_VERSION_ID<70400)) {
+	if (get_magic_quotes_gpc()>0) {
+		osW_Settings::getInstance()->removeMagicQuotes();
+	}
 }
 
 if (osW_Object::setIsEnabled('osW_Database')===true) {
