@@ -415,7 +415,7 @@ class osW_Database_Result extends osW_Object {
 	}
 
 	public function isError() {
-		if ($this->error===false) {
+		if (($this->error===false)||($this->error==='')) {
 			return false;
 		}
 
