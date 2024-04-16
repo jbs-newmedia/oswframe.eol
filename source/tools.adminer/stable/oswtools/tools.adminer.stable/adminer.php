@@ -32,9 +32,9 @@ function adminer_object() {
 
 	$_designs=glob(abs_path.'resources/php/adminer/designs/*');
 	$designs=[];
-	foreach ($_designs as $design) {
-		$designs[basename($design)]=basename($design);
-	}
+	#foreach ($_designs as $design) {
+	#	$designs[basename($design)]=basename($design);
+	#}
 
 	$plugins=[// specify enabled plugins here
 		new AdmineroswTools, new AdminerFrames, new FillLoginForm('server', osW_Tool::getInstance()->getFrameConfig('database_server'), osW_Tool::getInstance()->getFrameConfig('database_username'), osW_Tool::getInstance()->getFrameConfig('database_password'), osW_Tool::getInstance()->getFrameConfig('database_db')), new AdminerDesigns($designs), new AdminerTableHeaderScroll()];
@@ -44,7 +44,7 @@ function adminer_object() {
 	return new AdminerPlugin($plugins);
 }
 
-include abs_path.'resources/php/adminer/adminer-4.8.1.php';
+include abs_path.'resources/php/adminer/adminer-4.8.4.php';
 die();
 
 ?>
